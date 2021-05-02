@@ -1,0 +1,42 @@
+{
+  "paths": [
+    {
+      "name": "/getEmailList",
+      "lambdaFunction": "getEmail",
+      "privacy": {
+        "private": true,
+        "auth": [
+          "/POST",
+          "/GET",
+          "/PUT",
+          "/PATCH",
+          "/DELETE"
+        ]
+      },
+      "policyResourceName": "/getEmailList"
+    }
+  ],
+  "resourceName": "getEmailList",
+  "apiName": "getEmailList",
+  "functionArns": [
+    {
+      "lambdaFunction": "getEmail"
+    }
+  ],
+  "privacy": {
+    "auth": 1,
+    "unauth": 0,
+    "authRoleName": "amplify-oooproject-dev-202738-authRole",
+    "unAuthRoleName": "amplify-oooproject-dev-202738-unauthRole"
+  },
+  "dependsOn": [
+    {
+      "category": "function",
+      "resourceName": "getEmail",
+      "attributes": [
+        "Name",
+        "Arn"
+      ]
+    }
+  ]
+}

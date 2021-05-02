@@ -1,0 +1,5 @@
+{
+    "tableName": "emailListTable",
+    "partitionKeyName": "email",
+    "partitionKeyType": "S"
+}
